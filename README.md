@@ -5,6 +5,8 @@
 :pushpin:Bir karmaşık sayı gerçek ve sanal kısımlardan oluşmaktadır. Karmaşık sayıyı aşağıdaki gibi bir yapı ile ifade edebiliriz:
 
 struct COMPLEX {
+
+
 	double real;
 	double imag;
 };
@@ -28,6 +30,7 @@ Burada ilk iki parametresiyle alınan karmaşık sayılar toplanıp sonuç üç�
 - İki karmaşık sayıyı çıkartan ve çarpan fonksiyonlar:
 
 void sub_complex(struct COMPLEX *pz1, struct COMPLEX *pz2, struct COMPLEX *pz3);
+
 void mul_complex(struct COMPLEX *pz1, struct COMPLEX *pz2, struct COMPLEX *pz3);
 
 /*****exercise7.2*****/
@@ -35,11 +38,13 @@ void mul_complex(struct COMPLEX *pz1, struct COMPLEX *pz2, struct COMPLEX *pz3);
 :pushpin:Ekranda bir noktayı ve dikdörtgensel bir alanı betimlemek için aşağıdaki gibi bir POINT ve RECT yapıları olsun:
 
 struct POINT {
+
 	int x;
 	int y;
 };
 
 struct RECTE {
+
 	int x1;
 	int y1;
 	int x2;
@@ -61,7 +66,8 @@ Bu fonksiyon eğer nokta dikdörtgenin içerisindeyse true değeri ile değilse 
 bool türü <stdbool.h> içerisnde _Bool olarak typdef edilmiştir.  Bu tür anımsanacağı gibi C99 ile C'ye eklenmiştir. <stdbool.h> içerisinde iki sembolik sabit de aşağıdaki gibi define edilmiştir:
 
 #define false		0
-#define true			1
+
+#define true		1
 
 - İki dikdörtgenin kesişiminde elde edilen dikdörtgeni hesaplayan intersect_rect fonksiyonu:
 
